@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="contato">
+    <nav>
+        <img src="imagens/logobolo1.png" text="Dona Doceira">
+        <a href="index.html">Home</a>
+        <a href="servico.html">Cardápio</a>
+        <a href="contato.html">Fale Conosco</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">
+            <button id="login">
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </a> 
+    </nav>
+
+    <div class="containervideo">
+        <video autoplay muted loop>
+            <source src="midias/carrossel.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+    </div>
+       
+    <form action="https://formsubmit.co/vitoriars1108@gmail.com" method="POST" id="contactForm">
+        <div class="form-group">
+            <div class="contact-info">
+                <h3>Informações para Contato:</h3>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Dona Doceira Rua das Flores, 123
+                    Bairro Jardim Encantado, São Paulo - SP, CEP: 01234-567</p>
+                <p><i class="fas fa-phone-alt"></i> <strong>Telefone:</strong> (14) 99786-0401</p>
+                <p><i class="fas fa-envelope"></i> <strong>E-mail:</strong> <a href="vitoria1108souza@gamil.com">contatodonadoceira@gmail.com</a></p>
+                <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/glowandgo" target="_blank">@donadoceira</a></p>
+                <p><i class="fa-solid fa-clock"></i><strong> Horário de Funcionamento:</strong>SEG á DOM das 9am até 18pm</p>
+            </div><br>
+            
+                <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                </div>
+
+                <label for="question">Motivo de Contato:</label>
+                <select id="question6" name="question6" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="Acre">Elogio</option>
+                <option value="Alagoas">Qualidade</option>
+                <option value="Acre">Problema no Site</option>
+                <option value="Alagoas">Outros</option>
+                </select>
+                
+                <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+
+                <div id="input_chek">
+                    <fieldset id="chek">
+                        <input type="checkbox" id="lembrar_me" name="lembrar_me" value="lembrar_me"><p>Declaro que li e concordo com a <a href="#">Política de Privacidade</a> da Dona Doceira</p>
+                    </fieldset>
+                </div>
+                
+                <div class="form-group">
+                <button type="submit" id="enviar">Enviar</button>
+                </div>
+            </form>
+
+    <audio autoplay loop>
+        <source src="midias/Espresso.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer>
+        <div class="footer-icons">
+            <p><a href="https://www.instagram.com/vs0uza/" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+            <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a></p>
+            <p><a href="https://wa.me/14997860401" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></p>
+        </div>
+        <p>&copy; 2024 Dona Doceira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>

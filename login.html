@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- acesso a biblioteca de icones na nuvem -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro</title>
+</head>
+
+<body id="login">
+    
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Cadastro</h1>
+            </div>
+
+            <!-- midias sociais -->
+            <div id="social_midia">
+                <a href="#"><img src="imagens/facebook.png" alt="facebook logo"></a>
+                <a href="#"><img src="imagens/google.png" alt="google logo"></a>
+                <a href="#"><img src="imagens/github.png" alt="github logo"></a>
+            </div>
+
+            <div id="inputs">
+                <!-- nome -->
+                <div id="input_box">
+                    <label for="nome">Nome
+                        <div id="input_field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="nome" id="nome"required>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- email -->
+                <div id="input_box">
+                    <label for="email">Email
+                        <div id="input_field">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="text" name="email" id="email"required>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- cpf -->
+                <div id="input_box">
+                    <label for="cpf">CPF
+                        <div id="input_field">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="text" name="cpf" id="cpf"required>
+                        </div>
+                    </label>
+                </div>
+
+                 <!-- tel -->
+                 <div id="input_box">
+                    <label for="telefone">Telefone
+                        <div id="input_field">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" name="telefone" id="telefone"required>
+                        </div>
+                    </label>
+                </div>
+
+                <div id="input_estado">
+                    <label id="estado" for="estado">Estado</label>
+                    <select id="questoes" name="questoes" required>
+                    <option value="" disabled selected>Selecione seu estado</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                    </select>
+                </div>
+
+                    <div id="input_box">
+                        <label for="cep">CEP
+                            <div id="input_field">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input type="tel" name="cep" id="cep"required>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div id="input_box">
+                        <label for="complemento">Complemento
+                            <div id="input_field">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <input type="text" name="complemento" id="complemento" required>
+                            </div>
+                        </label>
+                    </div>
+                
+                <!-- password -->
+                <div id="input_box">
+                    <label for="password">Senha
+                        <div id="input_field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" name="password" id="password"required>
+                        </div>
+                    </label>
+                </div>
+
+            <!-- button -->
+            <a href="servico.html">
+                <button type="button" id="lbutton">Ir as Compras</button>
+            </a>
+            
+             <a href="index.html">
+                <button type="submit" id="lbutton2">Finalizar Cadastro</button>
+            </a>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-icons">
+            <p><a href="https://www.instagram.com/vs0uza/" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+            <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a></p>
+            <p><a href="https://wa.me/14997860401" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></p>
+        </div>
+        <p>&copy; 2024 Dona Doceira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

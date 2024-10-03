@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="quiz">
+
+    <nav>
+        <img src="imagens/logobolo1.png" text="Dona Doceira">
+        <a href="index.html">Home</a>
+        <a href="servico.html">Cardápio</a>
+        <a href="contato.html">Fale Conosco</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="login.html">
+            <button id="login">
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </a>
+    </nav>
+
+    <div class="carrossel">
+        <div class="slides">
+                <img src="imagens/21.png" class="carousel-item" alt="Imagem 1">
+                <img src="imagens/24.png" class="carousel-item" alt="Imagem 2">
+                <img src="imagens/23.png" class="carousel-item" alt="Imagem 3">
+                <img src="imagens/22.png" class="carousel-item" alt="Imagem 4">
+                <img src="imagens/13.png" class="carousel-item" alt="Imagem 5">
+                <img src="imagens/14.png" class="carousel-item" alt="Imagem 6">
+                <img src="imagens/15.png" class="carousel-item" alt="Imagem 7">
+                <img src="imagens/16.png" class="carousel-item" alt="Imagem 8">
+            </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <main class="containerquiz">
+    <section class="quiz-section">
+            <h1>Quiz sobre a Dona Doceira</h1>
+            <form id="quiz-form">
+   
+                <!-- Pergunta 1 -->
+                <section class="question">
+                    <fildset>
+                        <p>1. Qual é o principal tipo de produto vendido pela Dona Doceira e Cia?</p>
+                        <label><input type="radio" name="q1" value="a" onclick="disableOptions('q1'), playsound()"> a) Salgados</label><br>
+                        <label><input type="radio" name="q1" value="b" onclick="disableOptions('q1'), playsound()"> b) Doces e bolos</label><br>
+                        <label><input type="radio" name="q1" value="c" onclick="disableOptions('q1'), playsound()"> c) Sorvetes</label><br>
+                        <label><input type="radio" name="q1" value="d" onclick="disableOptions('q1'), playsound()"> d) Todas as opções</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 2 -->
+                <section class="question">
+                    <fildset>
+                        <p>2. Qual o diferencial dos bolos da Dona Doceira e Cia?</p>
+                        <label><input type="radio" name="q2" value="a" onclick="disableOptions('q2'), playsound()"> a) Receitas artesanais e ingredientes de alta qualidade</label><br>
+                        <label><input type="radio" name="q2" value="b" onclick="disableOptions('q2'), playsound()"> b) Uso exclusivo de adoçantes artificiais</label><br>
+                        <label><input type="radio" name="q2" value="c" onclick="disableOptions('q2'), playsound()"> c) Produzidos em larga escala</label><br>
+                        <label><input type="radio" name="q2" value="d" onclick="disableOptions('q2'), playsound()"> d) Embalagens sustentáveis</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 3 -->
+                <section class="question">
+                    <fildset>
+                        <p>3. Qual é o compromisso principal da Dona Doceira e Cia com seus clientes?</p>
+                        <label><input type="radio" name="q3" value="a" onclick="disableOptions('q3'), playsound()"> a) Preços baixos</label><br>
+                        <label><input type="radio" name="q3" value="b" onclick="disableOptions('q3'), playsound()"> b) Produtos importados</label><br>
+                        <label><input type="radio" name="q3" value="c" onclick="disableOptions('q3'), playsound()"> c) Alta qualidade e sabor autêntico</label><br>
+                        <label><input type="radio" name="q3" value="d" onclick="disableOptions('q3'), playsound()"> d) A redução do uso de ingredientes naturais</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 4 -->
+                <section class="question">
+                    <fildset>
+                        <p>4. Qual é a missão da Dona Doceira e Cia?</p>
+                        <label><input type="radio" name="q4" value="a" onclick="disableOptions('q4'), playsound()"> a) Feitos com açúcares refinados</label><br>
+                        <label><input type="radio" name="q4" value="b" onclick="disableOptions('q4'), playsound()"> b) Feitos com ingredientes naturais</label><br>
+                        <label><input type="radio" name="q4" value="c" onclick="disableOptions('q4'), playsound()"> c) Contém conservantes</label><br>
+                        <label><input type="radio" name="q4" value="d" onclick="disableOptions('q4'), playsound()"> d) Produzidos em larga escala</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 5 -->
+                <section class="question">
+                    <fildset>
+                        <p>5. Qual é a visão da Dona Doceira e Cia para o futuro?</p>
+                        <label><input type="radio" name="q5" value="a" onclick="disableOptions('q5'), playsound()"> a) Promover doces feitos com ingredientes industrializados</label><br>
+                        <label><input type="radio" name="q5" value="b" onclick="disableOptions('q5'), playsound()"> b) Buscamos adoçar a vida de nossos clientes com qualidade e carinho em cada criação.</label><br>
+                        <label><input type="radio" name="q5" value="c" onclick="disableOptions('q5'), playsound()"> c) Manter-se como uma pequena confeitaria local</label><br>
+                        <label><input type="radio" name="q5" value="d" onclick="disableOptions('q5'), playsound()"> d) Lançar uma linha de doces veganos e sem glúten</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 6 -->
+                <section class="question">
+                    <fildset>
+                        <p>6. Onde está localizada a sede principal da Dona Doceira e Cia?</p>
+                        <label><input type="radio" name="q6" value="a" onclick="disableOptions('q6'), playsound()"> a) São Paulo</label><br>
+                        <label><input type="radio" name="q6" value="b" onclick="disableOptions('q6'), playsound()"> b) Rio de Janeiro</label><br>
+                        <label><input type="radio" name="q6" value="c" onclick="disableOptions('q6'), playsound()"> c) Bahia</label><br>
+                        <label><input type="radio" name="q6" value="d" onclick=" disableOptions('q6'), playsound()"> d) Rio Grande so Sul</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 7 -->
+                <section class="question">
+                    <fildset>
+                        <p>7. Qual é o público-alvo principal da Dona Doceira e Cia?</p>
+                        <label><input type="radio" name="q7" value="a" onclick="disableOptions('q7'), playsound()"> a) Jovens e adolescentes</label><br>
+                        <label><input type="radio" name="q7" value="b" onclick="disableOptions('q7'), playsound()"> b) Famílias e amantes de doces artesanais</label><br>
+                        <label><input type="radio" name="q7" value="c" onclick="disableOptions('q7'), playsound()"> c) Atletas e praticantes de esportes</label><br>
+                        <label><input type="radio" name="q7" value="d" onclick="disableOptions('q7'), playsound()"> d) Executivos e profissionais de escritório</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 8 -->
+                <section class="question">
+                    <fildset>
+                        <p>8. Em quais eventos a Dona Doceira e Cia costuma fornecer seus produtos?</p>
+                        <label><input type="radio" name="q8" value="a" onclick="disableOptions('q8'), playsound()"> a) Festas de aniversário e casamentos</label><br>
+                        <label><input type="radio" name="q8" value="b" onclick="disableOptions('q8'), playsound()"> b) Competições esportivas</label><br>
+                        <label><input type="radio" name="q8" value="c" onclick="disableOptions('q8'), playsound()"> c) Festivais de cinema</label><br>
+                        <label><input type="radio" name="q8" value="d" onclick="disableOptions('q8'), playsound()"> d) Feiras de tecnologia</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 9 -->
+                <section class="question">
+                    <fildset>
+                        <p>9. Além de bolos e doces, qual outro item a Dona Doceira e Cia oferece em seu cardápio?</p>
+                        <label><input type="radio" name="q9" value="a" onclick="disableOptions('q9'), playsound()"> a) Sorvetes artesanais</label><br>
+                        <label><input type="radio" name="q9" value="b" onclick="disableOptions('q9'), playsound()"> b) Pães caseiros</label><br>
+                        <label><input type="radio" name="q9" value="c" onclick="disableOptions('q9'), playsound()"> c) Salgados</label><br>
+                        <label><input type="radio" name="q9" value="d" onclick="disableOptions('q9'), playsound()"> d) Saladas gourmet</label>
+                    </fildset>
+                </section>
+   
+                <!-- Pergunta 10 -->
+                <section class="question">
+                    <fildset>
+                        <p>10. Qual foi o primeiro doce a ser vendido pela Dona Doceira e Cia?</p>
+                        <label><input type="radio" name="q10" value="a" onclick="disableOptions('q10'), playsound()"> a) Bolos</label><br>
+                        <label><input type="radio" name="q10" value="b" onclick="disableOptions('q10'), playsound()"> b) Brigadeiros</label><br>
+                        <label><input type="radio" name="q10" value="c" onclick="disableOptions('q10'), playsound()"> c) Kibe</label><br>
+                        <label><input type="radio" name="q10" value="d" onclick="disableOptions('q10'), playsound()"> d) Pudim
+                        </label>
+                    </fildset>
+                </section>
+   
+                <button class="buttones"  type="button" onclick="SubmitQuiz()">Enviar Respostas</button>
+                <button class="buttones" id="reiniciar" type="button" onclick="submitAgain()">Responder Novamente</button>
+
+            </form>
+
+            <audio id="venceusom" src="midias/venceu.mp3" preload="auto"></audio>
+            <audio id="selecionasom" src="midias/seleciona.mp3" preload="auto"></audio>
+            <audio id="perdeusom" src="midias/perdeu.mp3" preload="auto"></audio>
+
+            <section id="result"></section>
+        </section>
+    </main>
+   
+    <footer>
+        <div class="footer-icons">
+            <p><a href="https://www.instagram.com/vs0uza/" target="_blank"><i class="fa-brands fa-instagram"></i></a></p>
+            <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a></p>
+            <p><a href="https://wa.me/14997860401" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></p>
+        </div>
+        <p>&copy; 2024 Dona Doceira. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
