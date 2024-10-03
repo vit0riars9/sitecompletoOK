@@ -71,9 +71,6 @@ body{
         border-radius: 20px;
 }
 
-    button#login:hover{
-        background-color: var(--cor1);
-    }
 }
  
 body#home{
@@ -102,9 +99,6 @@ body#home{
         color: var(--cor8);
     }
 
-    nav button:hover{
-        background-color: var(--cor2);
-    }
 
     .carrossel {
         position: relative;
@@ -222,7 +216,6 @@ body#home{
         color: var(--cor5);
     }
 
-
     button.prev, button.next{
         position: absolute;
         top: 50%;
@@ -277,10 +270,6 @@ body#servico{
     nav a:hover{
         text-decoration: none;
         color: var(--cor8);
-    }
-    
-    nav button:hover{
-        background-color: var(--cor2);
     }
 
     .containervideo video{
@@ -553,9 +542,6 @@ body#contato{
         color: var(--cor8);
     }
     
-    nav button:hover{
-        background-color: var(--cor2);
-    }
     .containervideo video{
         max-width: 99vw;
     }
@@ -704,11 +690,6 @@ body#quiz{
        
     }
     
-    nav button:hover{
-        background-color: var(--cor2);
-        
-    }
-
     .carrossel {
         position: relative;
         width: 100%;
