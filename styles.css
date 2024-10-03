@@ -12,8 +12,8 @@
     --cor1: #ffa9c0;
     --cor2: #e58bb7;
     --cor3: #e27aac;
-    --cor4: #cd1e72;
-    --cor5: #bc2d71; 
+    --cor4: #cb6094;
+    --cor5: #c04d85; 
     --cor6: #c2447d;
     --cor7: #8b6646;
     --cor8: #774f1a;
@@ -110,7 +110,6 @@ body#home{
         position: relative;
         width: 100%;
         overflow: hidden;
-        /* border: 2px solid #ccc; */
     }
     
     .slides {
@@ -218,6 +217,11 @@ body#home{
         border-radius: 10px;
         cursor: pointer;
     }
+
+    button#confira:hover{
+        color: var(--cor5);
+    }
+
 
     button.prev, button.next{
         position: absolute;
