@@ -98,7 +98,7 @@ body#home{
     }
     
     nav a:hover{
-        text-decoration: overline;
+        text-decoration: none;
         color: var(--cor8);
     }
 
@@ -275,7 +275,7 @@ body#servico{
     }
      
     nav a:hover{
-        text-decoration: overline;
+        text-decoration: none;
         color: var(--cor8);
     }
     
@@ -549,7 +549,7 @@ body#contato{
     }
      
     nav a:hover{
-        text-decoration: overline;
+        text-decoration: none;
         color: var(--cor8);
     }
     
@@ -699,7 +699,7 @@ body#quiz{
     }
      
     nav a:hover{
-        text-decoration: overline;
+        text-decoration: none;
         color: var(--cor8);
        
     }
